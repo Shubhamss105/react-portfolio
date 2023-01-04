@@ -1,6 +1,7 @@
 import React from 'react'
 import { Container, Icon } from 'semantic-ui-react'
 import image from '../img/home_bg.png'
+import resume from '../img/Shubham_Singh Resume.pdf'
 
 const HomeNew = () => {
   return (
@@ -16,7 +17,7 @@ const HomeNew = () => {
 				{/* <br className="hidden md:inline lg:hidden"/>turpis pulvinar, est scelerisque ligula sem */}
 			</p>
 			<div className="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start">
-            <button type="button" className="px-8 py-3 font-semibold rounded-full bg-purple-500 hover:bg-purple-600 text-white cursor-pointer">Download CV</button>
+            <a href={resume} download='resume' type="button" className="px-8 py-3 font-semibold rounded-full bg-purple-500 hover:bg-purple-600 hover:text-white text-white cursor-pointer" >Download CV</a>
 			</div>
 
             <h4 className='text-orange-400'>FOLLOW ME</h4>
